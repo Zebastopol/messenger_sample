@@ -1,10 +1,17 @@
 /* Example Flexbox Messenger Layout */
+:root {
+    --primary-color: #A491D2;
+    --secondary-color: #cec8ef;
+    --text-color: #666;
+    --background-color: #f5f6fa;
+    --font-family: 'Typefaces', roboto bold, open sans regular;
+}
 
 body {
     display: flex;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f6fa;
+    font-family: var(--font-family);
+    background: var(--background-color);
     flex-direction: column;
 }
 .main-section {
@@ -19,32 +26,37 @@ body {
     display: flex;
     flex-direction: column;
 }
-.user-profile{
+.user-profile  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between   center;
     align-items: center;
-    padding: 25px 25px;
+    margin: 15px 15px 15px 15px;
     border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
 }
 .user-info {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
+    justify-content: space-between;
 }
 .user-info p {
+    display: flex;
     margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #666;
 }
 
 .icons-menu {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    flex-basis: 15%;
-    align-items: center;
+    flex-basis: 18%;
+    align-items: right;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 10px 30px;
 }
 /*.user-profile  p{
     display: flex;
